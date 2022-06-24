@@ -1,0 +1,31 @@
+android_app {
+    name: "dumb spinner",
+
+    // Include SettingsLib and it's dependencies
+    defaults: ["SettingsLibDefaults"],
+
+    srcs: ["src/**/*.java"],
+    resource_dirs: ["res"],
+
+    manifest: "AndroidManifest.xml",
+
+    platform_apis: true,
+    certificate: "platform",
+    system_ext_specific: true,
+    privileged: false,
+
+    optimize: {
+        proguard_flags_files: ["proguard.flags"],
+    },
+
+    static_libs: [
+        "androidx.appcompat_appcompat",
+        "androidx.dynamicanimation_dynamicanimation",
+        "androidx.palette_palette",
+        "androidx.recyclerview_recyclerview",
+        "jsr305",
+        "org.lineageos.platform.internal",
+        "SystemUISharedLib",
+    ],
+
+}
