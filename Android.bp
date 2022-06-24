@@ -2,16 +2,13 @@ android_app {
     name: "dumb spinner",
 
     // Include SettingsLib and it's dependencies
-    defaults: ["SettingsLibDefaults"],
 
     srcs: ["src/**/*.java"],
     resource_dirs: ["res"],
 
     manifest: "AndroidManifest.xml",
 
-    platform_apis: true,
     certificate: "platform",
-    system_ext_specific: true,
     privileged: false,
 
     optimize: {
