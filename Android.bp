@@ -23,8 +23,6 @@ android_app {
         "androidx.dynamicanimation_dynamicanimation",
         "androidx.palette_palette",
         "androidx.recyclerview_recyclerview",
-        "jsr305",
-        "org.lineageos.platform.internal",
         "SystemUISharedLib",
     ],
 
