@@ -5,10 +5,10 @@ LOCAL_MODULE_TAGS := optional
 
 LOCAL_SRC_FILES := $(call all-subdir-java-files)
 
-LOCAL_PACKAGE_NAME := Provision
-LOCAL_PRIVATE_PLATFORM_APIS := true
+LOCAL_PACKAGE_NAME := dumb spinner
+LOCAL_PRIVATE_PLATFORM_APIS := false
 LOCAL_CERTIFICATE := platform
-LOCAL_PRIVILEGED_MODULE := true
+LOCAL_PRIVILEGED_MODULE := false
 
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 
