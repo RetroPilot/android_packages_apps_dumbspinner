@@ -10,12 +10,10 @@ import androidx.appcompat.app.AppCompatActivity
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        val intent = intent;
+        setContentView(R.layout.activity_fork_select)
+        //val fork_select_intent = Intent(this, fork_select::class.java)
+        //startActivity(fork_select_intent)
 
-        // we should really be checking these
-        //val action = intent.action
-        //val type = intent.type
 
         // Fetching intent extra text
         val desiredText = intent.getStringExtra("loading_reason")
