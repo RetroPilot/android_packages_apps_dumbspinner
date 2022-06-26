@@ -45,7 +45,7 @@ class fork_select : AppCompatActivity() {
             if (easterEgg > 5) {
                 startActivity(Intent(this, easter::class.java))
             }
-            // incriment easterEgg
+            // increment easterEgg
 
         }
 
@@ -71,6 +71,11 @@ class fork_select : AppCompatActivity() {
                 //You have the permission, re-launch MainActivity
                 val fork_select_intent = Intent(applicationContext, fork_select::class.java)
                 startActivity(fork_select_intent)
+
+                // really we don't need to reopen the fork selector activity
+                // however, quick and dirty, so, it is what it is.
+                launchSettingsWithOverlay()
+
                 return
             }
             handler.postDelayed(this, 250)
