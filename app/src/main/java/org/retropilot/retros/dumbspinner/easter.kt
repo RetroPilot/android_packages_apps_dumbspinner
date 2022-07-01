@@ -31,9 +31,7 @@ private lateinit var binding: ActivityEasterBinding
         // loop video
         videoView.setOnCompletionListener { videoView.start() }
 
-        // o7
-        val toast = Toast.makeText(this, "Sláva Ukrayíni!", Toast.LENGTH_SHORT)
-        toast.show();
+        Toast.makeText(this, "Tap to exit", Toast.LENGTH_SHORT).show()
 
         // exit out of video
         val main_layout = findViewById<ConstraintLayout>(R.id.main_layout)
