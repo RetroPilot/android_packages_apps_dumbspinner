@@ -1,4 +1,5 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
+
     <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="@style/Theme.MaterialComponents.DayNight.NoActionBar">
 
         <item name="colorPrimary">@color/purple_200</item>
@@ -14,4 +15,13 @@
         <item name="android:windowFullscreen">true</item>
         <item name="android:windowContentOverlay">@null</item>
     </style>
+
+    <style name="Theme.DumbSpinner.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.DumbSpinner.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.DumbSpinner.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
