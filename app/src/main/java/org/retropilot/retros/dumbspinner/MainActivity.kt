@@ -19,10 +19,15 @@ class MainActivity : AppCompatActivity() {
 
         // Fetching intent extra text
         val desiredText = intent.getStringExtra("loading_reason")
+        val desiredText2 = intent.getStringExtra("loading_reason2")
 
         if (desiredText != null) {
             val loadingReason = findViewById<TextView>(R.id.loadingReason)
             loadingReason.setText(desiredText)
+        }
+        if (desiredText2 != null) {
+            val loadingReason2 = findViewById<TextView>(R.id.loadingReason2)
+            loadingReason2.setText(desiredText2)
         }
 
         val ipText = findViewById<TextView>(R.id.connection)
